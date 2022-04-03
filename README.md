@@ -1,1 +1,3 @@
-# C_VSCode_Template
+# Game Of Life!
+
+https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life
