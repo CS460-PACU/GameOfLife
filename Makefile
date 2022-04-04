@@ -28,6 +28,10 @@ getTestcases:
 	wget http://zeus.cs.pacificu.edu/chadd/CS460/game_of_life_testcases.tar.gz
 	tar zxf game_of_life_testcases.tar.gz
 	rm game_of_life_testcases.tar.gz
+	
+runSmallTest1Gen: bin/main
+	bin/main testcases/smallGame.life testcases/smallGame_1gen.out 1 1
+	diff -Bw testcases/smallGame_1gen.expected testcases/smallGame_1gen.out
 
 clean:
 	rm -f bin/main bin/*.o
