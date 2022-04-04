@@ -31,7 +31,10 @@ getTestcases:
 	
 runSmallTest1Gen: bin/main
 	bin/main testcases/smallGame.life testcases/smallGame_1gen.out 1 1
+	@echo differences bewteen expected output and your output:
+	@echo -Start-
 	diff -Bw testcases/smallGame_1gen.expected testcases/smallGame_1gen.out
-
+	@echo -End-
+	
 clean:
 	rm -f bin/main bin/*.o
