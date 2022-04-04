@@ -24,5 +24,10 @@ valgrind: bin/main
 printMain:
 	enscript -C -T 2 -p - -M Letter -Ec --color -fCourier8 src/main.c  | ps2pdf - bin/main.pdf
 
+getTestcases:
+	wget http://zeus.cs.pacificu.edu/chadd/CS460/game_of_life_testcases.tar.gz
+	tar zxf game_of_life_testcases.tar.gz
+	rm game_of_life_testcases.tar.gz
+
 clean:
 	rm -f bin/main bin/*.o
