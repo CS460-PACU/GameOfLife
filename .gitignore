@@ -6,3 +6,4 @@ bin/main
 **/*.err
 testcases/
 **/*.life
+**/*.pdf
