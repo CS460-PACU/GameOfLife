@@ -11,7 +11,7 @@
       "program": "${workspaceFolder}/bin/main", // THIS IS IMPORTANT
       "args": ["64.59.225.81", "/chadd/cs360f21/LabHttp.html"], // add comma separated list of args here.
       "stopAtEntry":  true, // THIS IS IMPORTANT 
-      "cwd": "${fileDirname}",
+      "cwd": "${workspaceFolder}",
       "environment": [],
       "externalConsole": false,
       "MIMode": "gdb",
@@ -31,7 +31,7 @@
       "program": "${workspaceFolder}/bin/main", // THIS IS IMPORTANT
       "args": [],
       "stopAtEntry": true, // THIS IS IMPORTANT 
-      "cwd": "${fileDirname}",
+      "cwd": "${workspaceFolder}",
       "environment": [],
       "externalConsole": false,
       "MIMode": "gdb",
