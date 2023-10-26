@@ -12,8 +12,10 @@ all: bin bin/main
 bin:
 	mkdir -p bin
 
+# be sure to add -pthread to LINK step
+
 bin/main: bin bin/main.o
-	gcc -o bin/main -g -Wall bin/main.o
+	gcc -o bin/main -g -Wall bin/main.o -pthread
 
 bin/main.o: src/main.c
 	gcc -c -o bin/main.o -g -Wall src/main.c
